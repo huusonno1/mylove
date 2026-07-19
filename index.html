@@ -31,7 +31,7 @@
   }
 
   body{
-    font-family:Georgia,'Iowan Old Style','Palatino Linotype',serif;
+    font-family:'Times New Roman',Cambria,Georgia,serif;
     min-height:100vh;
   }
 
@@ -99,28 +99,6 @@
     font-size:1rem;
     max-width:32ch;
     line-height:1.6;
-  }
-
-  .scrolldown{
-    margin-top:2.5rem;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:.4rem;
-    color:var(--text-muted);
-    font-family:system-ui,-apple-system,'Segoe UI',sans-serif;
-    font-size:.75rem;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-  }
-
-  .scrolldown svg{
-    animation:bob 2.2s ease-in-out infinite;
-  }
-
-  @keyframes bob{
-    0%,100%{ transform:translateY(0); opacity:.55; }
-    50%{ transform:translateY(8px); opacity:1; }
   }
 
   /* ---------- Letter ---------- */
@@ -324,7 +302,6 @@
   }
 
   @media (prefers-reduced-motion: reduce){
-    .scrolldown svg{ animation:none; }
     .letter-body .cursor{ animation:none; }
   }
 </style>
@@ -339,12 +316,6 @@
     <span class="eyebrow">Một lá thư nhỏ</span>
     <h1>Nguyệt ơi,<br><em>tớ xin lỗi.</em></h1>
     <p class="sub">Tớ không giỏi nói ra những điều này, nên tớ viết. Cậu đọc hết giúp tớ nhé.</p>
-    <div class="scrolldown">
-      <span>Đọc thư</span>
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M2 5L8 11L14 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
   </section>
 
   <section class="letter-section">
